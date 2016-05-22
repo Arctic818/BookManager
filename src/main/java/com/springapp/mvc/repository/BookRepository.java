@@ -20,7 +20,10 @@ public class BookRepository {
         this.sessionFactory.getCurrentSession().save(book);
     }
 
+
     public void updateBook(Book book){
+        System.out.println(book.getiD());
+        System.out.println(book.getName());
         this.sessionFactory.getCurrentSession().update(book);
     }
 

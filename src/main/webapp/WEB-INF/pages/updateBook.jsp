@@ -6,6 +6,12 @@
     <form:form method="post" action="/updateBook" commandName="ubook">
         <table>
             <tr>
+                <td><form:label path="iD">
+                    id
+                </form:label></td>
+                <td><form:input path="iD" value="${editBook.iD}"/></td>
+            </tr>
+            <tr>
                 <td><form:label path="name">
                     Name
                 </form:label></td>
